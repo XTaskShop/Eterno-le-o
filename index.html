@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eterno Leão</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ffc107;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .swiper {
+      width: 90%;
+      max-width: 600px;
+      margin: 30px auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      display: block;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .gallery-title {
+      font-size: 1.8rem;
+      color: #ffc107;
+      margin: 40px 0 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-grid img,
+    .gallery-grid video {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .divider {
+      height: 2px;
+      width: 60%;
+      margin: 40px auto;
+      background: #333;
+      border-radius: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Eterno Leão</h1>
+    <p>Uma homenagem eterna, viva em nossas memórias.</p>
+  </header>
+
+  <!-- Carrossel -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="leao1" alt="Foto 1"/></div>
+      <div class="swiper-slide"><img src="leao2" alt="Foto 2"/></div>
+      <div class="swiper-slide"><img src="leao3" alt="Foto 3"/></div>
+      <div class="swiper-slide"><img src="leao4" alt="Foto 4"/></div>
+      <div class="swiper-slide"><img src="leao5" alt="Foto 5"/></div>
+      <div class="swiper-slide"><img src="leao6" alt="Foto 6"/></div>
+      <div class="swiper-slide"><img src="leao7" alt="Foto 7"/></div>
+    </div>
+  </div>
+
+  <!-- Galeria de Fotos -->
+  <section>
+    <div class="gallery-title">Galeria de Fotos</div>
+    <div class="gallery-grid">
+      <img src="leao1" alt="Foto 1"/>
+      <img src="leao2" alt="Foto 2"/>
+      <img src="leao3" alt="Foto 3"/>
+      <img src="leao4" alt="Foto 4"/>
+      <img src="leao5" alt="Foto 5"/>
+      <img src="leao6" alt="Foto 6"/>
+      <img src="leao7" alt="Foto 7"/>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Galeria de Vídeos -->
+  <section>
+    <div class="gallery-title">Galeria de Vídeos</div>
+    <div class="gallery-grid">
+      <video src="leao1.mp4" controls></video>
+      <video src="leao2.mp4" controls></video>
+      <video src="leao3.mp4" controls></video>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      effect: "slide",
+      speed: 600
+    });
+  </script>
+
+</body>
+</html>
